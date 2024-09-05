@@ -1,0 +1,239 @@
+<div style="page-break-after: auto;">
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Invoice</title>
+        <style type="text/css">
+            body {
+                font-size: 42px !important;
+                /* margin-top: 520px !important; */
+                font-family: 'Verdana' !important;
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+
+            p {
+                padding: 2px !important;
+                margin: 2px !important;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid #000000;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 10px;
+            }
+
+            th {
+                background-color: #D3D3D3;
+                text-align: left;
+            }
+
+            .row {
+                display: flex;
+                box-sizing: border-box;
+            }
+
+            .col-1 {
+                flex: 0 0 50%;
+                padding: 0.1em;
+                display: inline-block;
+            }
+
+            .col-2 {
+                flex: 0 0 50%;
+                padding: 0.1em;
+                /*display: inline-block;*/
+            }
+
+            .content td {
+                border-top: 0px solid transparent !important;
+                border-bottom: 0px solid transparent !important;
+            }
+
+            .declarations {
+                display: flex;
+                box-sizing: border-box;
+                width: 100%;
+                margin-top: 3px;
+                font-family: 'Verdana' !important;
+            }
+
+            .declarations-table td,
+            tr {
+                padding: 2px !important;
+                margin: 2px !important;
+                font-family: 'Verdana' !important;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="row">
+            <table style="width: 100%; border: 5px solid #000;">
+                        <tr>
+                            <td colspan="3" width="20%"style=" text-align: center;"><strong>QUOTATION</strong></td>
+                            <td colspan="2" style=" text-align: center;"><strong>Date</strong></td>
+                            <td style=" text-align: center;" >31/03/2000</td>
+                            <td colspan="1" ><strong>Order No.</strong>&nbsp;&nbsp;&nbsp;&nbsp;Q18727</td>
+                        </tr>
+                        <tr >
+                            <td colspan="2"width="20%"><strong>Sales Person Name</strong></td>
+                            <td colspan="3" width="40%"></td>
+                            <td width="20%"><strong>Dispatch Date</strong></td>
+                            <td width="20%"  ></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="20%"><strong>Billing in which firm</strong></td>
+                            <td colspan="3" >&nbsp;&nbsp;</td>
+                            <td ><strong>Status of Dispatch</strong></td>
+                            <td colspan="1" ></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="width:20%"><strong>Client name</strong></td>
+                            <td colspan="5" style="width:60%"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="20%"><strong>Transport</strong></td>
+                            <td colspan="3" style="width:30%"></td>
+                            <td style="width:20%"><strong>Local Forwarding</strong></td>
+                            <td colspan="1" style="width:20%"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="20%"><strong>Booking Destination</strong></td>
+                            <td colspan="3" style="width:30%"></td>
+                            <td ><strong>Amount of LF</strong></td>
+                            <td colspan="1"  style="width:20%"></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>Sr.No</strong></td>
+                            <td style=" text-align: center;" width="25%"><strong>Particular</strong></td>
+                            <td style=" text-align: center;"><strong>Nos</strong></td>
+                            <td style=" text-align: center;"><strong>Packing</strong></td>
+                            <td style=" text-align: center;"><strong>Quantity</strong></td>
+                            <td style=" text-align: center;"><strong>Price</strong></td>
+                            <td style=" text-align: center;"><strong>Tax</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>1</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>2</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>3</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>4</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>5</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td style=" text-align: center;"><strong>6</strong></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"></td>
+                            <td style=" text-align: center;"><strong>18%</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" ><strong>Term of Supply(Transport Payment)</strong></td>
+                            <td colspan="2" style=" text-align: center;"><strong>To Pay</strong></td>
+                            <td colspan="2" style=" text-align: center;"><strong>Approximate Invoice Total</strong></td>
+                            <td colspan="1" style=" text-align: center;" ><strong>INR</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><strong>Payment Condition</strong></td>
+                            <td colspan="3"></td>
+                            <td colspan="2"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><strong>Outstanding Details</strong></td>
+                            <td colspan="3"></td>
+                            <td ><strong>No. of Invoice</strong></td>
+                            <td colspan="1"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="7"><strong>Remark :</strong></td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="7">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="7">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="7">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><strong>Check Point 1</strong></td>
+                            <td colspan="2"><strong>Dt.</strong></td>
+                            <td colspan="2"><strong>Check Point 2</strong></td>
+                            <td colspan="1"><strong>Dt.</strong></td>
+                        </tr>                          
+            </table>
+        </div>
+
+        <div style="padding-top: 10px; width: 100%;">
+            <span style="font-size: 46px !important;">
+                <i>This is a computer generated document confirming values mentioned above.</i>
+            </span>
+        </div>
+    </body>
+
+    </html>
+
+</div>

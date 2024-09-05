@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\File;
+use Illuminate\Http\Request;
+
+class ManageLeadCalls extends Model
+{
+    use HasFactory;
+
+
+    //method to add calls
+    public static function add_calls($lead_id,$employee_id,$request)
+    {
+        $calls_info = new ManageLeadCalls;
+        $calls_info->employee_id = $employee_id;
+        $calls_info->lead_id = $lead_id;
+        $calls_info->call_date = $request->call_date;
+        $calls_info->call_time = $request->call_time; 
+        $calls_info->call_description = $request->call_description;
+        $calls_info->created = date('y-m-d h:i:s');
+        $calls_info->updated = date('y-m-d h:i:s');
+        $calls_info->save();
+
+        return $calls_info;
+    }
+
+    public $timestamps = false;
+    protected $table = 'lead_calls';
+}
